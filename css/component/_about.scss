@@ -1,0 +1,54 @@
+@import '../foundation/mixins.scss';
+//anoutセクション
+.about-block {
+  &__img {
+    &-wrap {
+      @include bp-sp-max {
+        width: 110px;
+        margin-right: 20px;
+        box-shadow: 10px 10px 0 0 #fff;
+      }
+      @include bp-sp-min {
+        width: 330px;
+        margin-right: 20px;
+        box-shadow: 16px 16px 0 0 #fff;
+      }
+    }
+  }
+  &__area {
+    justify-content: flex-start;
+    @include bp-sp-max {
+      margin-bottom: 40px;
+    }
+    @include bp-sp-min {
+      align-items: flex-start;
+    }
+  }
+  &__text {
+    font-family: 'Inter';
+    @include bp-sp-max {
+      font-size: 1.4rem;
+    }
+    @include bp-sp-min {
+      float: right;
+      margin-top: -120px;
+      font-size: 1.6rem;
+    }
+    &--en {
+      font-family: 'Inter';
+      @include bp-sp-min {
+        margin: 40px 0 0 120px;
+        font-size: 2.4rem;
+      }
+    }
+  }
+  &__sub-title {
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Inter';
+    @include bp-sp-max {
+      margin-bottom: 10px;
+      font-size: 1.8rem;
+    }
+  }
+}

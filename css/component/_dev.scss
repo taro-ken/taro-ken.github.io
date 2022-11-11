@@ -1,0 +1,133 @@
+@import '../foundation/mixins.scss';
+//development セクション
+.dev-block {
+  &__list {
+    justify-content: space-between;
+    @include bp-sp-max {
+      justify-content: space-between;
+    }
+    @include bp-sp-min {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+    &-item {
+      @include bp-sp-max{
+        margin-bottom: 40px;
+        &:nth-of-type(2n) {
+          flex-flow: row-reverse;
+        }
+      }
+      @include bp-sp-min {
+        flex-direction: column;
+        width: calc(100% / 3);
+        margin-bottom: 64px;
+        text-align: center;
+      }
+    }
+    &-text {
+      margin-bottom: 32px;
+      @include bp-sp-max{
+        font-size: 1.4rem;
+      }
+      @include bp-sp-min{
+      }
+      &-area {
+          @include bp-sp-max{
+            width: 56%;
+          }
+          @include bp-sp-min{
+          }
+      }
+    }
+  }
+  &__img {
+    &-wrap {
+      @include bp-sp-max{
+        width: 40%;
+      }
+      @include bp-sp-min{
+        width: 240px;
+        margin: 0 auto 24px;
+      }
+      box-sizing: border-box;
+    }
+  }
+  &__link {
+    position: relative;
+    color: #fff;
+    font-size: 1.4rem;
+    font-family: 'Inter';
+    text-decoration: none;
+    &::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 5px;
+      right: -22px;
+      width: 18px;
+      height: 6px;
+      background: url('../images/arrow_right.svg') no-repeat;
+      background-size: 18px 6px;
+    }
+  }
+  &__sub-title {
+    display: inline-block;
+    background-color: #2C2C2E;
+    color: #fff;
+    font-weight: bold;
+    @include bp-sp-max {
+      margin-bottom: 6px;
+      padding: 0 12px 1px;
+    }
+    @include bp-sp-min {
+      margin-bottom: 10px;
+      padding: 2px 12px 3px;
+      font-size: 2.4rem;
+    }
+  }
+  &__box {
+    background-color: #2C2C2E;
+    @include bp-sp-max {
+      padding: 18px 16px;
+    }
+    @include bp-sp-min {
+      padding: 18px 20px;
+    }
+    &-title {
+      font-weight: bold;
+      font-family: 'Inter';
+      @include bp-sp-max {
+        margin-bottom: 18px;
+        font-size: 2rem;
+      }
+      @include bp-sp-min {
+        margin-bottom: 18px;
+        font-size: 2.4rem;
+      }
+    }
+  }
+  &__sub-list {
+    font-size: 1.4rem;
+    @include bp-sp-max {
+      font-size: 1.4rem;
+    }
+    @include bp-sp-min {
+    }
+    &-item {
+      position: relative;
+      margin-bottom: 16px;
+      padding-left: 15px;
+      &::before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 11px;
+        left: 0;
+        width: 10px;
+        height: 1px;
+        background-color: #fff;
+      }
+    }
+  }
+}
