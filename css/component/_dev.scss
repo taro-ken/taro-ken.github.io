@@ -89,10 +89,20 @@
   &__box {
     background-color: #2C2C2E;
     @include bp-sp-max {
+      margin-bottom: 24px;
       padding: 18px 16px;
     }
     @include bp-sp-min {
+      margin-bottom: 30px;
       padding: 18px 20px;
+    }
+    &:last-of-type {
+      @include bp-sp-max {
+        margin-bottom: 32px;
+      }
+      @include bp-sp-min {
+        margin-bottom: 40px;
+      }
     }
     &-title {
       font-weight: bold;
@@ -128,6 +138,27 @@
         height: 1px;
         background-color: #fff;
       }
+    }
+  }
+  &__description {
+    @include bp-sp-max {
+      margin-bottom: 32px;
+    }
+    @include bp-sp-min {
+      margin-bottom: 40px;
+      font-size: 1.8rem;
+    }
+  }
+  &__back-text {
+    display: block;
+    color: #fff;
+    font-family: 'Inter';
+    text-align: center;
+    @include bp-sp-max {
+      font-size: 1.4rem;
+    }
+    @include bp-sp-min {
+      font-size: 1.6rem;
     }
   }
 }
