@@ -1,0 +1,11 @@
+@mixin bp-sp-max {
+  @media #{map-get($breakpoints, sp-max)} {
+    @content;
+  }
+}
+
+@mixin bp-sp-min {
+  @media #{map-get($breakpoints, sp-min)} {
+    @content;
+  }
+}

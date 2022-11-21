@@ -1,0 +1,10 @@
+//fade
+.fade {
+  opacity: 0;
+  transition: .8s;
+  transform: translate(0, 150px);
+}
+.fade_in {
+  opacity: 1;
+  transform: translate(0, 0);
+}

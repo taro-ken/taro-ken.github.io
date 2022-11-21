@@ -1,0 +1,52 @@
+@import '../foundation/mixins.scss';
+//section
+.section-block {
+  position: relative;
+  @include bp-sp-max {
+    padding: 90px 0 96px;
+  }
+  @include bp-sp-min {
+    padding: 100px 0 110px;
+  }
+  &::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 89px;
+    height: 97px;
+    background: url('../images/bg_frame.svg') no-repeat;
+    @include bp-sp-max {
+      width: 89px;
+      height: 97px;
+      background-size: 89px 97px;
+    }
+    @include bp-sp-min {
+      width: 178px;
+      height: 194px;
+      background-size: 178px 194px;
+    }
+  }
+  &--gray {
+    background-color: #2C2C2E;
+    &::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: url('../images/bg_frame02.svg') no-repeat;
+      @include bp-sp-max {
+        width: 89px;
+        height: 97px;
+        background-size: 89px 97px;
+      }
+      @include bp-sp-min {
+        width: 178px;
+        height: 194px;
+        background-size: 178px 194px;
+      }
+    }
+  }
+}

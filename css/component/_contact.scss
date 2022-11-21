@@ -1,0 +1,56 @@
+//contact
+.contact-block {
+  &__text {
+    color: #ffffff;
+    text-align: center;
+    @include bp-sp-max {
+      margin-bottom: 32px;
+      font-size: 1.4rem;
+    }
+    @include bp-sp-min {
+      margin-bottom: 40px;
+      font-size: 2rem;
+    }
+    &--mail {
+      position: relative;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    &--instagram {
+      position: relative;
+      text-align: center;
+    }
+  }
+
+  &__link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.6rem;
+  }
+  &__icon {
+    &--mail {
+      position: relative;
+      width: 17.6px;
+      @include bp-sp-max {
+        top: -3px;
+        margin-right: 9px;
+      }
+      @include bp-sp-min {
+        top: -4px;
+        margin-right: 9px;
+      }
+    }
+    &--instagram {
+      width: 15.6px;
+      position: relative;
+      @include bp-sp-max {
+        top: -3px;
+        margin-right: 9px;
+      }
+      @include bp-sp-min {
+        top: -3px;
+        margin-right: 9px;
+      }
+    }
+  }
+}

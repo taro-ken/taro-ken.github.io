@@ -1,0 +1,55 @@
+//base
+* {
+  box-sizing: border-box;
+}
+html {
+  min-width: 1140px;
+  -webkit-text-size-adjust: 100%;
+  font-size: 62.5%;
+  @include bp-sp-max {
+    min-width: auto;
+    width: 100%;
+  }
+  @include bp-sp-min {
+    min-width: 1140px;
+  }
+}
+body {
+  line-height: 1.5;
+  font-family: 'Noto Sans CJK JP', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.6rem;
+  color: #ffffff;
+  background-color: #021517;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  -ms-interpolation-made: bicubic;
+}
+main {
+  display: block;
+  margin-top: 70px;
+}
+.page-wrapper {
+  display: none;
+}
+.pc-only {
+  @include bp-sp-max {
+    display: none;
+  }
+  @include bp-sp-min {
+    display: block;
+  }
+}
+.sp-only {
+  @include bp-sp-max {
+    display: block;
+  }
+  @include bp-sp-min {
+    display: none;
+  }
+}
+

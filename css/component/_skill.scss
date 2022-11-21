@@ -1,0 +1,60 @@
+@import '../foundation/mixins.scss';
+//skillセクション
+.skill-block {
+  &__list {
+    @include bp-sp-min {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &-item {
+      @include bp-sp-max {
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 16px 0;
+        border-bottom: 1px solid #707070;
+      }
+      @include bp-sp-min {
+        width: calc(100% / 2);
+        margin-bottom: 40px;
+        justify-content: flex-start;
+      }
+      &:first-of-type {
+        padding-top: 0;
+      }
+    }
+    &-text {
+      @include bp-sp-max {
+        font-size: 1.4rem;
+      }
+      &-area {
+
+      }
+    }
+  }
+  &__img {
+    &-wrap {
+      @include bp-sp-max {
+        width: 40px;
+        margin-right: 10px;
+      }
+      @include bp-sp-min {
+        width: 80px;
+        margin-right: 24px;
+      }
+    }
+  }
+  &__sub-title {
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Inter';
+    @include bp-sp-max {
+      margin-bottom: 10px;
+      font-size: 1.8rem;
+    }
+    @include bp-sp-min {
+      margin-bottom: 10px;
+      font-size: 2rem;
+    }
+  }
+}
