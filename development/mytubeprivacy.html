@@ -2,13 +2,13 @@
     <article id="termsofuse" />
 
     <script>
-        fetch('https://gensen.microcms.io/api/v1/termsofuse',
-            { headers: { "X-MICROCMS-API-KEY": "f01dfcf667e54d73b9c5300db11ae1ea5e58" } })
+        fetch('https://mytube.microcms.io/api/v1/userpolicy',
+            { headers: { "X-MICROCMS-API-KEY": "G5vbqjm6A5Qcd5K76gMdVfxa42tidbClHC3k" } })
             .then((res) => {
                 return res.json();
             })
             .then((json) => {
-                document.getElementById("termsofuse").innerHTML = json.body;
+                document.getElementById("userpolicy").innerHTML = json.body;
             })
             .catch((reason) => {
                 console.log(reason);
