@@ -1,0 +1,17 @@
+<BODY>
+    <article id="privacypolicy" />
+
+    <script>
+        fetch('https://mytube.microcms.io/api/v1/privacypolicy',
+            { headers: { "X-MICROCMS-API-KEY": "G5vbqjm6A5Qcd5K76gMdVfxa42tidbClHC3k" } })
+            .then((res) => {
+                return res.json();
+            })
+            .then((json) => {
+                document.getElementById("privacypolicy").innerHTML = json.body;
+            })
+            .catch((reason) => {
+                console.log(reason);
+            });
+    </script>
+</BODY>
