@@ -745,6 +745,7 @@ main {
 @media screen and (max-width: 768px) {
   .dev-block__list {
     justify-content: space-between;
+    flex-direction: column;
   }
 }
 @media screen and (min-width: 769px) {
