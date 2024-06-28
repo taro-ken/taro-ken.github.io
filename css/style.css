@@ -1063,16 +1063,11 @@ main {
 
 
 .contact-block__text--contact {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center; /* テキストを中央揃えにします */
   color: #fff;
   text-decoration: none;
   font-size: 1.6rem;
 }
-
 
 
 .contact-block__icon--form {
