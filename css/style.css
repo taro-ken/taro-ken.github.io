@@ -355,7 +355,8 @@ main {
     display: inline-block;
     position: absolute;
     bottom: -6px;
-    left: 0;
+    left: 50%; /* 親要素の中央に配置するために左端を50%に設定 */
+    transform: translateX(-50%); /* 中央揃えに調整 */
     width: 40px;
     height: 4px;
     background-color: #fff;
@@ -372,7 +373,8 @@ main {
     display: inline-block;
     position: absolute;
     bottom: -6px;
-    left: 0;
+    left: 50%; /* 親要素の中央に配置するために左端を50%に設定 */
+    transform: translateX(-50%); /* 中央揃えに調整 */
     width: 40px;
     height: 4px;
     background-color: #fff;
@@ -408,7 +410,8 @@ main {
     display: inline-block;
     position: absolute;
     bottom: -6px;
-    left: 0;
+    left: 50%; /* 親要素の中央に配置するために左端を50%に設定 */
+    transform: translateX(-50%); /* 中央揃えに調整 */
     width: 40px;
     height: 2px;
     background-color: #fff;
@@ -425,7 +428,8 @@ main {
     display: inline-block;
     position: absolute;
     bottom: -6px;
-    left: 0;
+    left: 50%; /* 親要素の中央に配置するために左端を50%に設定 */
+    transform: translateX(-50%); /* 中央揃えに調整 */
     width: 40px;
     height: 2px;
     background-color: #fff;
