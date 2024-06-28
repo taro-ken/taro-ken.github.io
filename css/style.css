@@ -744,8 +744,10 @@ main {
 }
 @media screen and (max-width: 768px) {
   .dev-block__list {
-    justify-content: space-between;
-    flex-direction: column;
+    display: flex;
+    flex-direction: column; /* アイテムを縦に並べる */
+    justify-content: center; /* アイテムを縦方向の中央に配置 */
+    align-items: center; /* アイテムを横方向の中央に配置 */
   }
 }
 @media screen and (min-width: 769px) {
