@@ -83,6 +83,24 @@
         font-weight: bold;
         background-color: #166ab5;
       }
+
+      /* レスポンシブデザイン */
+      @media (max-width: 768px) {
+        .form-row {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .form-label {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+        input, textarea, select {
+          width: 100%;
+        }
+        button {
+          width: 100%;
+        }
+      }
     </style>
   </head>
   <body>
