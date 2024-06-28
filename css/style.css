@@ -784,7 +784,7 @@ main {
 }
 @media screen and (max-width: 768px) {
   .dev-block__list-text-area {
-    width: 56%;
+    width: 90%;
     margin: 0 auto; 
   }
 }
