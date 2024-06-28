@@ -1073,12 +1073,7 @@ main {
   font-size: 1.6rem;
 }
 
-.contact-block__link {
-  display: inline-block; /* リンクをインラインブロック要素として扱います */
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.6rem;
-}
+
 
 .contact-block__icon--form {
   vertical-align: middle; /* アイコンをテキストの中央に揃えます */
