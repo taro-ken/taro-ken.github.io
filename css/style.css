@@ -1070,6 +1070,7 @@ main {
   text-align: center;
 }
 .contact-block__link {
+  position: fixed;
   color: #fff;
   text-decoration: none;
   font-size: 1.6rem;
