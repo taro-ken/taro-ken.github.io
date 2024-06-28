@@ -1070,7 +1070,7 @@ main {
   text-align: center;
 }
 .contact-block__link {
-  position: relative;
+  position: fixed;
   text-align: center;
   color: #fff;
   text-decoration: none;
