@@ -1060,26 +1060,32 @@ main {
     font-size: 2rem;
   }
 }
-.contact-block__text--mail {
-  position: relative;
-  text-align: center;
-  margin-bottom: 20px;
-}
-.contact-block__text--instagram {
-  position: relative;
-  text-align: center;
-}
-.contact-block__link {
+
+
+.contact-block__text--contact {
   position: fixed;
-  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; /* テキストを中央揃えにします */
   color: #fff;
   text-decoration: none;
   font-size: 1.6rem;
 }
-.contact-block__icon--mail {
-  position: relative;
-  width: 17.6px;
+
+.contact-block__link {
+  display: inline-block; /* リンクをインラインブロック要素として扱います */
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.6rem;
 }
+
+.contact-block__icon--form {
+  vertical-align: middle; /* アイコンをテキストの中央に揃えます */
+  margin-right: 10px; /* 必要に応じてアイコンとテキストの間隔を調整します */
+}
+
+
 @media screen and (max-width: 768px) {
   .contact-block__icon--mail {
     top: -3px;
