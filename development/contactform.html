@@ -18,6 +18,72 @@
         h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
       })(document);
     </script>
+    <style>
+      /* フォームのスタイル */
+      form {
+        width: 70%;
+        margin: 0 auto;
+      }
+
+      .form-row {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        border-bottom: 1px solid #f2f4f5;
+      }
+      .form-row:last-child {
+        border-bottom: none;
+      }
+      .form-label {
+        display: flex;
+        align-items: center;
+        width: 250px;
+      }
+      .form-label label {
+        font-weight: bold;
+      }
+      .form-label span {
+        margin-left: 10px;
+        padding: 2px 6px;
+        border-radius: 3px;
+        font-size: 12px;
+        font-weight: bold;
+        color: #fff;
+        background-color: #166ab5;
+      }
+      input, textarea {
+        background-color: #f2f4f5;
+        border: none;
+        border-radius: 3px;
+        padding: 15px 20px;
+        font-size: 16px;
+        color: #333;
+        flex-grow: 1;
+      }
+      input::placeholder,
+      textarea::placeholder {
+        color: #999;
+        font-size: 14px;
+      }
+      select {
+        background-color: #f2f4f5;
+        border: none;
+        border-radius: 3px;
+        padding: 15px 20px;
+        font-size: 16px;
+        color: #333;
+      }
+      button {
+        cursor: pointer;
+        margin-top: 30px;
+        padding: 15px 45px;
+        border: none;
+        border-radius: 3px;
+        color: #fff;
+        font-weight: bold;
+        background-color: #166ab5;
+      }
+    </style>
   </head>
   <body>
     <div id="page-wrapper">
@@ -31,7 +97,7 @@
       <main class="page-wrapper">
         <div class="section-block dev-block" id="development">
           <section class="content-inner">
-           
+            <h2 class="content__title">Development</h2>
             <form action="your-server-side-script.php" method="POST">
               <div class="form-row">
                 <div class="form-label">
@@ -65,14 +131,14 @@
                   <label for="message">お問い合わせ内容</label>
                   <span>必須</span>
                 </div>
-                <textarea id="message" name="message" rows="5"placeholder="お問い合わせ内容をこちらにご記入ください" required></textarea>
+                <textarea id="message" name="message" rows="5" placeholder="お問い合わせ内容をこちらにご記入ください" required></textarea>
               </div>
               <div class="form-row">
                 <div class="form-label"></div>
                 <button type="submit">送信</button>
               </div>
             </form>
-
+            <p><a href="../../index.html" class="dev-block__back-text fade">back</a></p>
           </section>
         </div>
         <div class="section-block section-block--gray contact-block" id="contact">
