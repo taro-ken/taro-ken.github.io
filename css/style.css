@@ -1083,37 +1083,20 @@ main {
   text-decoration: none; /* 下線を消す */
 }
 
-.contact-block__icon--form {
-  vertical-align: middle; /* アイコンをテキストの中央に揃えます */
-  margin-right: 10px; /* 必要に応じてアイコンとテキストの間隔を調整します */
-}
-
+/* .contact-block__icon--form {
+  vertical-align: middle; 
+  margin-right: 10px; 
+} */
 
 @media screen and (max-width: 768px) {
-  .contact-block__icon--mail {
-    top: -3px;
+  .contact-block__icon--form {
+    vertical-align: middle; /* アイコンをテキストの中央に揃えます */
     margin-right: 9px;
   }
 }
 @media screen and (min-width: 769px) {
-  .contact-block__icon--mail {
-    top: -4px;
-    margin-right: 9px;
-  }
-}
-.contact-block__icon--instagram {
-  width: 15.6px;
-  position: relative;
-}
-@media screen and (max-width: 768px) {
-  .contact-block__icon--instagram {
-    top: -3px;
-    margin-right: 9px;
-  }
-}
-@media screen and (min-width: 769px) {
-  .contact-block__icon--instagram {
-    top: -3px;
+  .contact-block__icon--form {
+    vertical-align: middle; /* アイコンをテキストの中央に揃えます */
     margin-right: 9px;
   }
 }/*# sourceMappingURL=style.css.map */
