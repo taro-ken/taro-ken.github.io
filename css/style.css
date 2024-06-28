@@ -343,6 +343,7 @@ main {
   position: relative;
   font-family: "Inter";
   font-weight: bold;
+  text-align: center;
 }
 @media screen and (max-width: 768px) {
   .content__title {
@@ -380,7 +381,7 @@ main {
 }
 .content__title--right {
   position: relative;
-  text-align: right;
+  text-align: center;
 }
 .content__title--right::after {
   content: "";
