@@ -1,1 +1,40 @@
-
+<form action="your-server-side-script.php" method="POST">
+  <div class="form-row">
+    <div class="form-label">
+      <label for="name">お名前</label>
+      <span>必須</span>
+    </div>
+    <input type="text" id="name" name="name" placeholder="例) 山田 太朗" required>
+  </div>
+  <div class="form-row">
+    <div class="form-label">
+      <label for="email">メールアドレス:</label>
+      <span>必須</span>
+    </div>
+    <input type="email" id="email" name="email" placeholder="例) abcd@xyz.com" required>
+  </div>
+  <div class="form-row">
+    <div class="form-label">
+      <label for="pet-select">ペットの種類</label>
+    </div>
+    <select name="animal" id="pet-select">
+      <option value="">--選択してください--</option>
+      <option value="dog">犬</option>
+      <option value="cat">猫</option>
+      <option value="mouse">ハムスター</option>
+      <option value="bird">鳥</option>
+      <option value="fish">魚</option>
+    </select>
+  </div>
+  <div class="form-row">
+    <div class="form-label">
+      <label for="message">お問い合わせ内容</label>
+      <span>必須</span>
+    </div>
+    <textarea id="message" name="message" rows="5"placeholder="お問い合わせ内容をこちらにご記入ください" required></textarea>
+  </div>
+  <div class="form-row">
+    <div class="form-label"></div>
+    <button type="submit">送信</button>
+  </div>
+</form>
