@@ -777,7 +777,7 @@ main {
 .dev-block__list-text {
   margin-bottom: 32px;
 }
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .dev-block__list-text {
     font-size: 1.4rem;
   }
@@ -786,13 +786,14 @@ main {
   .dev-block__list-text-area {
     width: 56%;
   }
-}
+} */
 .dev-block__img-wrap {
   box-sizing: border-box;
 }
 @media screen and (max-width: 768px) {
   .dev-block__img-wrap {
-    width: 40%;
+    width: 240px;
+    margin: 0 auto 24px;
   }
 }
 @media screen and (min-width: 769px) {
