@@ -758,7 +758,7 @@ main {
 @media screen and (max-width: 768px) {
   .dev-block__list-item {
     flex-direction: column;
-    width: 33.3333333333%;
+    margin: 0 20px 64px; /* 上下に64pxのマージン、左右に20pxの余白 */
     margin-bottom: 64px;
     text-align: center;
   }
