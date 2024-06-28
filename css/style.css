@@ -1072,31 +1072,47 @@ main {
   }
 }
 
-.contact-block__text--contact {
-  text-align: center; /* テキストを中央揃えにします */
+/* .contact-block__text--contact {
+  text-align: center;
+  justify-content: center;
   color: #fff;
   font-size: 1.6rem;
 }
 
-.contact-block__link {
-  color: #fff; /* リンクのテキスト色を白に設定 */
-  text-decoration: none; /* 下線を消す */
-}
 
-/* .contact-block__icon--form {
-  vertical-align: middle; 
-  margin-right: 10px; 
-} */
 
 @media screen and (max-width: 768px) {
   .contact-block__icon--form {
-    vertical-align: middle; /* アイコンをテキストの中央に揃えます */
+    vertical-align: middle;
+    margin-right: 9px;
+  }
+} */
+
+
+
+.contact-block__link {
+  color: #fff; 
+  text-decoration: none;
+}
+
+.contact-block__text--contact {
+  position: relative;
+  text-align: center;
+}
+
+.contact-block__icon--form {
+  width: 15.6px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .contact-block__icon--form {
+    top: -3px;
     margin-right: 9px;
   }
 }
 @media screen and (min-width: 769px) {
   .contact-block__icon--form {
-    vertical-align: middle; /* アイコンをテキストの中央に揃えます */
+    top: -3px;
     margin-right: 9px;
   }
 }/*# sourceMappingURL=style.css.map */
