@@ -744,7 +744,7 @@ main {
 }
 @media screen and (max-width: 768px) {
   .dev-block__list {
-    display: flex;
+    /* display: flex; */
     flex-direction: column; /* アイテムを縦に並べる */
     justify-content: center; /* アイテムを縦方向の中央に配置 */
     align-items: center; /* アイテムを横方向の中央に配置 */
