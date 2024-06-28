@@ -764,9 +764,6 @@ main {
     margin-bottom: 64px;
     text-align: center;
   }
-  .dev-block__list-item:nth-of-type(2n) {
-    flex-flow: row-reverse;
-  }
 }
 @media screen and (min-width: 769px) {
   .dev-block__list-item {
