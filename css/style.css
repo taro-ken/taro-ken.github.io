@@ -792,8 +792,8 @@ main {
 }
 @media screen and (max-width: 768px) {
   .dev-block__img-wrap {
-    width: 240px;
-    margin: 0 auto 24px;
+    margin: 0 24px 24px; /* 左右に24pxの余白を持ち、下に24pxのマージンを持つ */
+    text-align: center; /* 画像を中央揃えにする */
   }
 }
 @media screen and (min-width: 769px) {
