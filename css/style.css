@@ -87,7 +87,7 @@ img {
   max-width: 100%;
   height: auto;
   vertical-align: bottom;
-  -ms-interpolation-made: bicubic;
+  -ms-interpolation-mode: bicubic;
 }
 
 main {
@@ -1070,7 +1070,7 @@ main {
   text-align: center;
 }
 .contact-block__link {
-  position: fixed;
+  position: relative;
   color: #fff;
   text-decoration: none;
   font-size: 1.6rem;
